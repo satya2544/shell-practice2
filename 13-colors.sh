@@ -28,7 +28,7 @@ VALIDATE(){
       dnf install mysql -y
       VALIDATE $? "MYSQL"   
  else
-    echo "MySQL already exist ... $Y SKIPPING $N"
+    echo -e "MySQL already exist ... $Y SKIPPING $N"
  fi           
 
 
@@ -38,7 +38,7 @@ VALIDATE(){
       dnf install nginx -y
       VALIDATE $? "Nginx"   
  else
-    echo "Nginx already exist ... $Y SKIPPING $N"
+    echo -e "Nginx already exist ... $Y SKIPPING $N"
  fi 
 
 dnf list installed python3
@@ -47,6 +47,6 @@ dnf list installed python3
       dnf install python3 -y
       VALIDATE $? "Python3"   
  else
-    echo "Python already exist ... $Y SKIPPING $N"
+    echo -e "Python already exist ... $Y SKIPPING $N"
  fi 
 
