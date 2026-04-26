@@ -54,7 +54,7 @@ dnf list installed python3 &>>$LOGS_FILE
       dnf install python3 -y &>>$LOGS_FILE
       VALIDATE $? "Python3"   
  else
-    echo -e "Python already exist ... $Y SKIPPING $N" | tee -a $LOGS_FILE
+    echo -e "Python already exist ... $Y SKIPPING $N" | tee -a $LOGS_FILE14-logs.sh14-logs.log1
  fi 
 
 
