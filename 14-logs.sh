@@ -9,7 +9,7 @@ N="\e[0m"
 
 LOGS_FOLDER="/var/log/shell-script"
 LOGS_NAME=$( echo $0 | cut -d "." -f1 )
-LOGS_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
+LOGS_FILE="$LOGS_FOLDER/14.logs.log"
 
 mkdir -p $LOGS_FOLDER
 echo "Script started executed at: $(data)" | tee -a $LOGS_FILE
